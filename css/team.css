@@ -1,4 +1,19 @@
+body {
+  background: #dedede;
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.team_cont{
+  margin-top: 100px;
+}
+.heading{
+  margin-bottom: 70px;
+}
 .card {
+  background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     max-width: 300px;
     margin-bottom: 30px;
@@ -6,7 +21,6 @@
     padding-left: 0;
     padding-right: 0;
     border-radius: 10px;
-
 }
 .card img{
   border-top-right-radius: 10px;
@@ -26,4 +40,88 @@
 .card:hover{
     box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.5);
     transform: translateY(-10px) scale(1.02);
+
+}
+@media(max-width:500px) {
+  .card p{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1em ;
+  }
+  .card h2{
+    font-size: 2em;
+ }
+}
+
+.slideanim {
+  visibility: hidden;
+}
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+.slideup{
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+
+/*END OF SLIDING EFFECTs*/
+.slideupanim {
+  visibility: hidden;
+}
+.slideup{
+  animation-name: slideup;
+  -webkit-animation-name: slideup;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
 }

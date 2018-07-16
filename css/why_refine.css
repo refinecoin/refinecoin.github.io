@@ -3,14 +3,34 @@
   font-weight: bold;
 }
 #security{
-  color: #070737;
+  color: green;
 }
 #reliable{
-  color: #17367F;
+  color: rgb(194, 23, 76);
 }
 #work{
-  color: #1E70FF;
+  color: orange;
 }
 #mrk{
   font-weight: bold;
+}
+
+@media(max-width:500px) {
+  .why_Refine  span{
+    font-size: 20px;
+  }
+  .why_Refine p{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1em ;
+  }
+  .why_Refine h1{
+    letter-spacing: 1px;
+    font-size: 2em;
+    margin-bottom: 30px;
+ }
+ .why_Refine h3{
+   letter-spacing: 4px;
+   font: normal 28px 'Montserrat';
+ }
 }

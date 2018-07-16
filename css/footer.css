@@ -1,52 +1,75 @@
-/*FOOTER*/
-
 footer {
-  height: 350px;
-  background-color: black;
+  background: black;
   color: white;
   padding: 40px 0;
-  position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: -444;
-  margin: 0;
 }
 
 footer a:hover {
   text-decoration: none;
 }
+
+.space {
+  margin-bottom: 20px;
+}
+.space .footer-links a{
+  color: #338be3;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.space .footer-links a:hover{
+  color: white;
+}
 .footer-distributed h3 {
   color: #ffffff;
+  font: normal 36px 'Pangolin';
   margin: 0;
 }
-.footer_text p{
-   font-size: 18px;
+
+.fa-facebook {
+  color: #3B5998;
+  padding: 14px;
+  background: white;
+  border-radius: 5px;
+  margin-left: 10px;
 }
-.footer_text i{
-   background-color: white;
-   padding: 20px;
-   border-radius: 20px;
-   color: black;
-   font-size: 18px;
-   margin-bottom: 40px;
+
+.fa-twitter {
+  color: white;
+  padding: 14px;
+  background: #1DA1F2;
+  border-radius: 50%;
+  margin-left: 10px;
 }
-.footer_image{
-  top: -30px;
+
+.fa-instagram {
+  color: white;
+  padding: 14px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-radius: 5px;
+  margin-left: 10px;
 }
-.footer_icons i{
- padding: 20px;
- background-color: white;
- margin-bottom: 10px;
- border-radius: 50%;
- font-size: 25px;
+
+.fa-youtube {
+  color: white;
+  padding: 14px;
+  background: red;
+  border-radius: 200px;
+  margin-left: 10px;
 }
+
 .fa:hover {
   background: white;
   color: black;
 }
+.footer-distributed h3{
+  margin-bottom: 30px;
+}
 
 .footer-distributed h3 span {
-  color: #5383d3;
+  color: yellow;
+
 }
 
 .footer-distributed .footer-company-name {
@@ -57,7 +80,7 @@ footer a:hover {
 }
 
 .footer-distributed .footer-company-name span {
-  color: #65a6ff;
+  color: #e22222;
   font-size: 15px;
   font-weight: normal;
   margin: 0;

@@ -5,7 +5,7 @@ html, body {
   position: relative;
 }
 .parallaxcont {
-  height: 800px;
+  height: 600px;
   background-image: url("../Images/Other/mission.jpeg");
   background-attachment: fixed;
   background-position: top center;
@@ -31,8 +31,8 @@ html, body {
   position: absolute;
   height:400px;
   top: 50%;
-  left: 45%;
-  transform: translate(-50%, -90%);
+  left: 50%;
+  transform: translate(-60%, -90%);
   color: white;
   font-size: 60px;
   margin: none;
@@ -43,7 +43,7 @@ html, body {
   color: white;
   font-size: 80px;
   transform: translate(-240%, -200%);
-  top:40%;
+  top:50%;
   left: 50%;
 }
 .content  .mission{
@@ -51,7 +51,7 @@ html, body {
   color: white;
   font-size: 80px;
   transform: translate(20%, -200%);
-  top:40%;
+  top:50%;
   left: 50%;
 }
 .content_text h3{
@@ -63,3 +63,49 @@ html, body {
   top:50%;
   left: 50%;
 }
+@media(max-width:980px) {
+.content span img{
+  transform: translate(-50%, -135%);
+  height: 250px;
+}
+.content  .our{
+  font-size: 60px;
+  transform: translate(-210%, -300%);
+}
+.content  .mission{
+  font-size: 60px;
+  transform: translate(20%, -300%);
+}
+.content_text h3{
+  transform: translate(-50%, -10%);
+  top:50%;
+  left: 50%;
+  font-size: 20px;
+}
+}
+@media(max-width:500px) {
+  .parallaxcont {
+    height: 400px;
+    padding: none !important;
+    margin: none !important;
+  }
+
+  .content span img{
+    transform: translate(-50%, -215%);
+    height: 100px;
+  }
+  .content  .our{
+    font-size: 25px;
+    transform: translate(-200%, -620%);
+  }
+  .content  .mission{
+    font-size: 25px;
+    transform: translate(20%, -620%);
+  }
+  .content_text h3{
+    transform: translate(-50%, -40%);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1em ;
+  }
+  }

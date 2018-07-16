@@ -7,6 +7,18 @@ header{
 #layer-bg{
   height:100vh;
 }
+#layer1{
+  top: -200px;
+}
+#layer2{
+    margin-top:100px;
+}
+#layer3{
+  height:100vh;
+}
+#layer4{
+  height:100vh;
+}
 .paralayer{
   width:100%;
   position: absolute;

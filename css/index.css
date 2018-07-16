@@ -126,6 +126,105 @@ body , html{
         display:block !important;
     }
 }
+
+
+.slideanim {
+  visibility: hidden;
+}
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-40%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+/* SLIDE UP*/
+.slideanimup {
+  visibility: hidden;
+}
+.slideup {
+  animation-name: slideup;
+  -webkit-animation-name: slideup;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+/*SLIDE RIGHT*/
+.slideanimright {
+  visibility: hidden;
+}
+.slideright {
+  animation-name: slideright;
+  -webkit-animation-name: slideright;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slideright {
+  0% {
+    opacity: 0;
+    transform: translateX(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideright {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(40%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+
+
 @media(max-width:480px) {
   .navbar-brand img{
     height: 150%;
@@ -135,17 +234,11 @@ body , html{
   z-index: 9;
   position: relative;
   background: white;
-  margin-bottom: 350px;
 }
 /* CONTENT ABOUT*/
 section{
   height: 100px;
-  background-color: #64C1FF;
 }
-
-
-}
-
  h1{
    letter-spacing: 1px;
    font: normal 30px 'Montserrat';
@@ -155,13 +248,49 @@ h3{
   letter-spacing: 4px;
   font: normal 28px 'Montserrat';
 }
-p{
-  
+ p{
   margin-top: 0rem;
-  line-height: 3.7777rem !important;
+  line-height: 3.7777rem;
   margin-bottom: 2.7777rem !important;
   word-spacing: 0.5px;
   letter-spacing: 2px;
   font-family: 'PT Sans Narrow', sans-serif;
   font: normal 24px 'Pangolin';
+}
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
+@media(max-width:500px) {
+  .about p{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1em ;
+  }
+  .about h1{
+    letter-spacing: 1px;
+    font-size: 2em;
+    margin-bottom: 30px;
+ }
+ .about h3{
+   letter-spacing: 4px;
+   font: normal 28px 'Montserrat';
+ }
+ section{
+   height:50px;
+ }
 }

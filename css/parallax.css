@@ -12,12 +12,15 @@ header{
 }
 #layer2{
     margin-top:100px;
+    width:100%;
 }
 #layer3{
-  height:100vh;
+  top: -5%;
+  width:100%;
 }
 #layer4{
-  height:100vh;
+  top: -5%;
+  width:100%;
 }
 .paralayer{
   width:100%;
@@ -30,10 +33,32 @@ header{
  header{
    height:50vh;
  }
-
+ #layer1{
+   top: 0px;
+ }
+ #layer3{
+   top: 10%;
+   width:100%;
+ }
+ #layer4{
+   top: 10%;
+   width:100%;
+ }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
   header{
     height:50vh;
   }
-}
+  #layer1{
+    top: -10%;
+  }
+
+  #layer3{
+    top: 10%;
+    width:100%;
+  }
+  #layer4{
+    top: 10%;
+    width:100%;
+  }
+ }
